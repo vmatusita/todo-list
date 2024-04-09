@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body {
+  background-image: url('../assets/galaxy-desktop-wallpaper.png');
+  background-position: center;
+  background-size: cover;
+  font-family: 'JetBrains Mono', monospace;
+  color: #FAF0E6;
+}
+
+button {
+  background-color: #5C5470;
+  color: #FAF0E6;
+  border: 2px solid #B9B4C7;
+  padding: .3rem .6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+button:hover {
+  background-color: #FAF0E6;
+  color: #5C5470;
+}
+
+input, select {
+    padding: .25rem .5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.todo-container{
+    max-width: 500px;
+    margin: 3rem auto;
+    background-color: #352F44;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.todo-container header{
+    text-align: center;
+    padding: 0 1rem 1 rem;
+    border-bottom: 1px solid #B9B4C7;
+}
+
+#todo-form, #form-edit{
+    padding: 1rem;
+    border-bottom: 1px solid #B9B4C7;
+}
+
+#todo-form p,
+#form-edit p{
+    margin-bottom: .5rem;
+    font-width: bold;
+}
+
+.form-control{
+    display: flex;
+}
+
+.form-control input{
+    margin-right: .3rem;
+}
+
+#cancel-edit-btn{
+    margin-top: 1rem;
+}
+
+.todo-list{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.todo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #B9B4C7;
+    transition: .3s;
+}
+
+.todo h3{
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button{
+    margin-left: .4rem;
+}
+
+.done{
+    background-color: #5C5470;
+}
+
+.done h3{
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.done button{
+    background-color: #352F44;
+    color: #FAF0E6;
+}
+
+.done button:hover{
+    background-color: #FAF0E6;
+    color: #352F44;
+}
